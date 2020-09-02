@@ -12,6 +12,10 @@ main(int argc, char **argv)
     exit();
   }
   for(i=1; i<argc; i++)
-    kill(atoi(argv[i]));
-  exit();
+    if(strcmp(argv[i], "1")==0) {
+      printf(2, "No me apliques el kill, por favor...\n");
+    } else {
+        kill(atoi(argv[i]));
+    }
+        exit();
 }
