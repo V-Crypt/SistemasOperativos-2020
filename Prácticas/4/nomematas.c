@@ -3,7 +3,7 @@
 #include <signal.h>
 
 void signalHandler(int signum) {
-    printf("Jaja no me matas \n");
+    printf("Jaja no me matas :D \n");
 }
 
 int main() {
